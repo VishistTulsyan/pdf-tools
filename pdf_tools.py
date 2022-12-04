@@ -15,7 +15,7 @@ def main():  # this function is for restarting the code so don't f with it
               "4. MERGE ALL PDF IN THE FOLDER TO A SINGLE PDF\n"
               "5. SPLIT A SINGLE PDF INTO MULTIPLE PDF\n"
               "6. GENERATE A PASSWORD PROTECTED PDF\n"
-              "7. ROTATE YOUR PDF\n"
+            #  "7. ROTATE YOUR PDF\n"
               #   code by Varun Banka & Vishist Tulsyan
               "8. KNOW MORE ABOUT ME")
 
@@ -62,11 +62,11 @@ def main():  # this function is for restarting the code so don't f with it
         old_pdf.save((input("ENTER NAME OF NEW PDF")), encryption=pikepdf.Encryption(user=input("enter pass"),
                                                                                      owner=input("enter owner"),
                                                                                      allow=file))
-    elif user_choice == "7" or user_choice == "g" or user_choice == "G":
-        old_pdf = Pdf.open(input("ENTER YOUR DOC NAME HERE-"))
-        for pg in old_pdf.pages:
-            pg.Rotate = 90
-            old_pdf.save(input("ENTER THE NEW FILE NAME"))
+ #   elif user_choice == "7" or user_choice == "g" or user_choice == "G":
+  #      old_pdf = Pdf.open(input("ENTER YOUR DOC NAME HERE-"))
+   #     for pg in old_pdf.pages:
+    #        pg.Rotate = 90
+     #       old_pdf.save(input("ENTER THE NEW FILE NAME"))
 
     elif user_choice == "8" or user_choice == "H" or user_choice == "h":
         print("I am a smart pdf editing tool made by Vishist and Varun \n")
