@@ -7,6 +7,6 @@ A simple yet powerful pdf tools made using python
 
 
 Download and install python
-also install a module by typing pip install pyshortners in the command promp
+
 
 Run the file
